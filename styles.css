@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 56px; /* Navbar offset */
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.hero-title {
+  font-size: 2.5rem;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+}
+
+/* Skills */
+.skill-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.skill-icon {
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+/* Work Intro */
+.intro-section {
+  background: linear-gradient(90deg, #f8f9fa, #e9ecef);
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Experience Blocks */
+.experience-block {
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+.experience-block h2 {
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Impact Cards */
+.impact-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.impact-card small {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #6c757d;
+}
+.impact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Charts */
+canvas {
+  max-height: 280px !important; /* Balanced size */
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .impact-card {
+    margin-bottom: 15px;
+  }
+}
